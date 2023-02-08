@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Sita Ramam | Movie Buzz</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="movie_images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <video src="video/Sita Ramam Trailer - Telugu Dulquer Salmaan Mrunal Rashmika Sumanth Hanu Raghavapudi.mp4" ></video>
+        <nav>
+            <div class="logo_ul">
+                <img src="movie_images/logo.png" alt="logo-movies">
+                <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="series">Series</a></li>
+                <li><a href="#" id="movies">Movies</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+            </div>
+            <div class="search_user">
+                <input type="text" placeholder="Search..." id="search_input">
+                <img src="movie_images/venky.png" alt="user-img">
+                <div class="search">
+                    
+                    
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h1 id="title">Sita Ramam</h1>
+            <p>An orphan soldier, Lieutenant Ram's life changes, after he gets a letter from a girl named Sita. He meets her and love blossoms between them. When he comes back to his camp in Kashmir,After he gets caught in jail, he sends a letter to Sita which won't reach her.</p>
+            <div class="details">
+                <h6>Multi-Language Film</h6>
+                <h5 id="gen">Action,Thriller,Drama</h5>
+                <h4 id="date">2022</h4>
+                <h3 id="rate"><span>IMDB</span> <i class="bi bi-star-fill"></i> 8.4</h3>
+            </div>
+            <div class="btns">
+                <a href="#" download="Sita Ramam 480ph" id="low_q">480p </a>
+                <a href="#" download="Sita Ramam 720ph"id="medium_q">720p </a>
+                <a href="#" download="Sita Ramam 1080ph"id="high_q">1080p </a>
+                <a href="" id="play">Watch Trailer <i class="bi bi-play-fill"></i></a>
+            </div>
+        </div>
+        <section>
+            <h4>Popular</h4>
+            <i class="bi bi-chevron-left"></i>
+            <i class="bi bi-chevron-right"></i>
+            <div class="cards">
+                
+            </div>
+        </section>
+    </header>
+    <script src="index.js"></script>
+    <script>
+        let video=document.getElementsByTagName('video')[0];
+        let play=document.getElementById('play');
+        play.addEventListener('click',function(event){
+            event.preventDefault();
+            if(video.paused){
+                video.play()
+                play.innerHTML=`Pause <i class="bi bi-pause-fill"></i>`;
+            }else{
+                video.pause()
+                play.innerHTML=`Play <i class="bi bi-play-fill"></i>`;
+            }
+        })
+    </script>
+</body>
+</html>
