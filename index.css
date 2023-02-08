@@ -454,3 +454,8 @@ header section .cards .card:hover .rest_card{
       padding: 0px 10px;
    }
 }
+@media only screen and (max-width: 767px) {
+  .cards {
+    display: flex;
+  }
+}
